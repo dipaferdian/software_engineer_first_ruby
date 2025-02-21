@@ -1,0 +1,5 @@
+logs/
+temp/
+.env
+*.tmp
+*.swp
