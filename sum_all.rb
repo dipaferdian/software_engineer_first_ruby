@@ -1,15 +1,15 @@
 require 'awesome_print'
 
-def sum_all(array:)
-  return 0 if array.size == 0
-
-  total = 0
-  array.each do |item|
-      total += item
+class SumAll
+  def self.call(array:)
+    return 0 if array.size == 0
+  
+    total = 0
+    array.each do |item|
+        total += item
+    end
+  
+    total
   end
-
-  total
 end
 
-
-ap sum_all(array: [1,2])

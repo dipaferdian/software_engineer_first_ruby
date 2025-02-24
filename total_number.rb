@@ -1,7 +1,7 @@
 require 'awesome_print'
 
-def total_number(array:, target:)
-
+class TotalNumber
+  def self.call(array:, target:)
     total = 0
     array.each do |item|
       if item == target
@@ -10,6 +10,6 @@ def total_number(array:, target:)
     end
 
     total
+  end
 end
 
-ap total_number(array: [1,1,3,4,1], target: 1)
