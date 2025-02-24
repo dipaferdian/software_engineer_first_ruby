@@ -1,8 +1,28 @@
 source 'https://rubygems.org'
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
-ruby '2.6.3'
-
+ruby "3.2.4"
 
 gem 'awesome_print', '~> 1.9'
+
 gem 'faker'
+
+gem "debug", platforms: %i[ mri mingw x64_mingw ]
+
+gem "rspec"
+
+gem "factory_bot_rails", '~> 6.1.0'
+
+gem 'rubocop', require: true
+
+gem 'shoulda-matchers', '~> 5.0'
+
+gem 'rspec-rails', '~> 4.0.1'
+
+gem 'rspec-core', '~> 3.9.0'
+
+gem 'rspec-expectations', '~> 3.9.0'
+
+gem 'rspec-mocks', '~> 3.9.0'
+
+gem 'rspec-support', '~> 3.9.0'

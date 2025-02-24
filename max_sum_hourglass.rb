@@ -1,16 +1,7 @@
   require 'awesome_print'
   
-  
-  input = [
-    [1, 1, 1, 0, 0, 0],
-    [0, 1, 0, 0, 0, 0],
-    [1, 1, 1, 0, 0, 0],
-    [0, 0, 2, 4, 4, 0],
-    [0, 0, 0, 2, 0, 0],
-    [0, 0, 1, 2, 4, 0],
-  ]
-
-  def hourglass(glasses:)
+  # find hourglasses in 2d array 3x3
+  def max_sum_hourglass(glasses:)
     max_sum = -Float::INFINITY
     
     (0..3).each do |row|
@@ -29,4 +20,13 @@
     max_sum
   end
 
-ap hourglass(glasses: input)
+  input = [
+    [1, 1, 1, 0, 0, 0],
+    [0, 1, 0, 0, 0, 0],
+    [1, 1, 1, 0, 0, 0],
+    [0, 0, 2, 4, 4, 0],
+    [0, 0, 0, 2, 0, 0],
+    [0, 0, 1, 2, 4, 0],
+  ]
+
+ap max_sum_hourglass(glasses: input)

@@ -1,6 +1,6 @@
 require 'awesome_print'
 
-def find_all(array:, target:)
+def total_number(array:, target:)
 
     total = 0
     array.each do |item|
@@ -12,4 +12,4 @@ def find_all(array:, target:)
     total
 end
 
-ap array_find_all(array: [1,1,3,4,1], target: 1)
+ap total_number(array: [1,1,3,4,1], target: 1)

@@ -1,6 +1,7 @@
 require 'awesome_print'
 
-def sort(array:)
+# check is an array is sorted from low to high or not
+def is_sort?(array:)
 
   return true if array.size == 0
 
@@ -17,4 +18,4 @@ def sort(array:)
   is_sorted
 end
 
-ap sorted(array: [1,3,3,5])
+ap is_sort?(array: [1,3,3,5])

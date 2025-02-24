@@ -1,9 +1,8 @@
 
 require 'awesome_print'
 
-def socks_match(n, ar)
-    # Write your code here
-    
+# matching color of socks using number as color of sock
+def socks_match(n, ar)    
     result = 0
     return result if ar.size == 0
 
@@ -32,5 +31,5 @@ def sort_color(input)
   pair_socks
 end
 
-ap socks_match(4, [1,1])
+ap socks_match(2, [1,1])
 

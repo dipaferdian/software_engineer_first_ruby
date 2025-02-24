@@ -1,5 +1,6 @@
 require 'awesome_print'
 
+# use single hash in bucket will be slowest O(n)
 class BadHash
   attr_reader :value
 
