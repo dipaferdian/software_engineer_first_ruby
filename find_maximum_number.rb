@@ -1,17 +1,22 @@
 require 'awesome_print'
 
-# find maximum number
-def find_maximum_number(array:)
+class FindMaximumNumber 
+  def self.call(array:)
 
- max_number = 0
- array.each_with_index do |item, i|
+    return 0 if array.size == 0
+    
+    max_number = 0
+    array.each_with_index do |item, i|
+   
+      if i == 0
+        max_number = item 
+      end
 
-   if item > max_number
-     max_number = item
-   end
- end
-
- max_number
+      if item > max_number
+        max_number = item
+      end
+    end
+   
+    max_number
+  end
 end
-
-ap find_maximum_number(array: [1,2,3,4])

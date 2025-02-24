@@ -1,6 +1,5 @@
 require 'awesome_print'
 
-# check is an array is sorted from low to high or not
 def is_sort?(array:)
 
   return true if array.size == 0

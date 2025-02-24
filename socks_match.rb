@@ -1,7 +1,6 @@
 
 require 'awesome_print'
 
-# matching color of socks using number as color of sock
 def socks_match(n, ar)    
     result = 0
     return result if ar.size == 0

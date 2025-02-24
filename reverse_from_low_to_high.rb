@@ -1,6 +1,5 @@
 require 'awesome_print'
 
-# reverse array of number from low to high
 def reverse_from_low_to_high(array:)
   array_size = array.size
   return [] if array_size == 0

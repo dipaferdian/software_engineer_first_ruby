@@ -1,6 +1,5 @@
 require 'awesome_print'
 
-# sum all array of number
 def sum_all(array:)
   return 0 if array.size == 0
 

@@ -1,6 +1,5 @@
   require 'awesome_print'
   
-  # find hourglasses in 2d array 3x3
   def max_sum_hourglass(glasses:)
     max_sum = -Float::INFINITY
     
